@@ -36,7 +36,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 /** A Factory class to create new Firestore instances. */
-public final class FirestoreOptions extends ServlientsiceOptions<Firestore, FirestoreOptions> {
+public final class FirestoreOptions extends ServiceOptions<Firestore, FirestoreOptions> {
 
   private static final String API_SHORT_NAME = "Firestore";
   private static final Set<String> SCOPES =
