@@ -11,8 +11,8 @@
   </description>
   <parent>
     <groupId>com.google.cloud</groupId>
-    <artifactId>google-cloud-clients</artifactId>
-    <version>0.93.1-alpha-SNAPSHOT</version><!-- {x-version-update:google-cloud-clients:current} -->
+    <artifactId>google-cloud-asset-parent</artifactId>
+    <version>0.93.1-beta-SNAPSHOT</version><!-- {x-version-update:google-cloud-asset:current} -->
   </parent>
   <properties>
     <site.installationModule>google-cloud-asset</site.installationModule>
@@ -21,6 +21,7 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>google-cloud-core-grpc</artifactId>
+      <version>1.75.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.api.grpc</groupId>

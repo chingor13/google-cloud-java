@@ -1,0 +1,8 @@
+# Format:
+# module:released-version:current-version
+
+proto-google-cloud-asset-v1:0.58.0:0.58.1-SNAPSHOT
+proto-google-cloud-asset-v1beta1:0.58.0:0.58.1-SNAPSHOT
+grpc-google-cloud-asset-v1:0.58.0:0.58.1-SNAPSHOT
+grpc-google-cloud-asset-v1beta1:0.58.0:0.58.1-SNAPSHOT
+google-cloud-asset:0.93.1-beta-SNAPSHOT
