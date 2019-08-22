@@ -141,6 +141,14 @@
       <url>site/google-cloud-clients</url>
     </site>
   </distributionManagement>
+  <repositories>
+    <repository>
+      <id>snapshots-repo</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases><enabled>false</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+  </repositories>
   <licenses>
     <license>
       <name>Apache-2.0</name>
