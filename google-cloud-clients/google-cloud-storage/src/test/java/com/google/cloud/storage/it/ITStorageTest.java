@@ -240,7 +240,18 @@ public class ITStorageTest {
       requestParamsHeader.put(requestParamsKey, "name=" + kmsKeyRingResourcePath);
       KeyManagementServiceBlockingStub stubForGetKeyRing =
           MetadataUtils.attachHeaders(kmsStub, requestParamsHeader);
-      stubForGetKeyRing.getKeyRing(getKeyRingRequest);
+      try {
+        stubForGetKeyRing.getKeyRing(getKeyRingRequest);
+      } catch (StatusRuntimeException ex) {
+        Throwable cause = ex;
+        while (cause != null) {
+          if (cause instanceof NullPointerException) {
+            System.out.println(cause.getStackTrace());
+          }
+          cause = ex.getCause();
+        }
+        throw ex;
+      }
     } catch (StatusRuntimeException ex) {
       if (ex.getStatus().getCode() == Status.Code.NOT_FOUND) {
         // Create KmsKeyRing
