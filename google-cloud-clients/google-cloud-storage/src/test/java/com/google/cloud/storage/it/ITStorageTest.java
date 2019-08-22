@@ -248,7 +248,7 @@ public class ITStorageTest {
           if (cause instanceof NullPointerException) {
             System.out.println(cause.getStackTrace());
           }
-          cause = ex.getCause();
+          cause = cause.getCause();
         }
         throw ex;
       }
